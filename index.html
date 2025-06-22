@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div id="themeSwitch" class="theme-switch" title="Toggle light/dark mode" tabindex="0" role="button" aria-pressed="false">
+                <span class="switch-icon sun"><i class="fas fa-sun"></i></span>
+                <span class="switch-slider"></span>
+                <span class="switch-icon moon"><i class="fas fa-moon"></i></span>
+            </div>
+            <h1><i class="fas fa-check-circle"></i> Todo List</h1>
+            <p>Organize your tasks efficiently</p>
+        </header>
+
+        <div class="todo-container">
+            <div class="input-section">
+                <input type="text" id="todoInput" placeholder="Add a new task..." maxlength="100">
+                <input type="date" id="todoDate" class="date-input">
+                <input type="time" id="todoTime" class="time-input">
+                <button id="addBtn" class="add-btn">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="todo-list" id="todoList">
+                <!-- Todo items will be dynamically added here -->
+            </div>
+
+            <div class="todo-stats">
+                <span id="taskCount">0 tasks remaining</span>
+                <button id="clearCompleted" class="clear-btn">Clear Completed</button>
+            </div>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <i class="fas fa-clipboard-list"></i>
+            <h3>No tasks yet</h3>
+            <p>Add your first task to get started!</p>
+        </div>
+        <footer class="footer">
+            Made with ❤️ by Nitya | Copyright 2025.
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
