@@ -99,14 +99,6 @@ The application uses browser localStorage to save your tasks. This means:
 - Safari 12+
 - Edge 79+
 
-## 📁 Project Structure
-
-```
-todo-list/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles and responsive design
-├── script.js           # JavaScript functionality
-└── README.md           # Project documentation
 ```
 
 ## 🚀 Future Enhancements
@@ -121,17 +113,7 @@ Potential features for future versions:
 - [ ] Drag and drop reordering
 - [ ] Search functionality
 
-## 🤝 Contributing
 
-Feel free to contribute to this project by:
-1. Forking the repository
-2. Creating a feature branch
-3. Making your changes
-4. Submitting a pull request
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
